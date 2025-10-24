@@ -6197,3 +6197,647 @@ si-border {
   margin-top: -49px;
   padding: 12px 12px;
 }
+
+/* Tambahkan CSS ini ke file: public/assets/css/style.css atau src/styles/index.css */
+
+/* Elegant More Button */
+.view-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  z-index: 1;
+}
+
+.view-more-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+}
+
+.view-more-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+  color: #fff;
+}
+
+.view-more-btn:hover::before {
+  width: 100%;
+}
+
+.view-more-btn i {
+  font-size: 14px;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.view-more-btn:hover i {
+  transform: translateX(5px);
+}
+
+.view-more-btn span {
+  position: relative;
+  z-index: 2;
+}
+
+/* Alternative Style 1 - Outline Elegant */
+.view-more-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #667eea;
+  background: transparent;
+  border: 2px solid #667eea;
+  border-radius: 50px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  z-index: 1;
+}
+
+.view-more-btn-outline::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: #667eea;
+  transition: width 0.5s ease, height 0.5s ease;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.view-more-btn-outline:hover {
+  color: #fff;
+  border-color: #667eea;
+}
+
+.view-more-btn-outline:hover::before {
+  width: 400px;
+  height: 400px;
+}
+
+.view-more-btn-outline i {
+  transition: transform 0.4s ease;
+}
+
+.view-more-btn-outline:hover i {
+  transform: translateX(5px);
+}
+
+/* Alternative Style 2 - Minimal Modern */
+.view-more-btn-minimal {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.view-more-btn-minimal::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.view-more-btn-minimal:hover {
+  color: #667eea;
+}
+
+.view-more-btn-minimal:hover::after {
+  width: 100%;
+}
+
+.view-more-btn-minimal i {
+  font-size: 12px;
+  transition: transform 0.3s ease;
+}
+
+.view-more-btn-minimal:hover i {
+  transform: translateX(5px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .view-more-btn,
+  .view-more-btn-outline {
+    padding: 14px 32px;
+    font-size: 15px;
+  }
+}
+
+/* Tambahkan CSS ini ke file: public/assets/css/style.css atau src/styles/index.css */
+
+/* Elegant Ocean Blue Button - Perfect for Fish Business */
+.view-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #0066cc 0%, #004080 100%);
+  border-radius: 50px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
+  z-index: 1;
+}
+
+.view-more-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(135deg, #0080ff 0%, #0066cc 100%);
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+}
+
+.view-more-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 102, 204, 0.4);
+  color: #fff;
+}
+
+.view-more-btn:hover::before {
+  width: 100%;
+}
+
+.view-more-btn i {
+  font-size: 14px;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.view-more-btn:hover i {
+  transform: translateX(5px);
+}
+
+.view-more-btn span {
+  position: relative;
+  z-index: 2;
+}
+
+/* Alternative Style 1 - Ocean Wave Effect */
+.view-more-btn-wave {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #006994 0%, #003d5c 100%);
+  border-radius: 50px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 20px rgba(0, 105, 148, 0.3);
+  z-index: 1;
+}
+
+.view-more-btn-wave::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.6s ease;
+}
+
+.view-more-btn-wave:hover::before {
+  left: 100%;
+}
+
+.view-more-btn-wave:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 105, 148, 0.4);
+  color: #fff;
+}
+
+.view-more-btn-wave i {
+  transition: transform 0.4s ease;
+}
+
+.view-more-btn-wave:hover i {
+  transform: translateX(5px);
+}
+
+/* Alternative Style 2 - Aqua Outline Elegant */
+.view-more-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0066cc;
+  background: transparent;
+  border: 2px solid #0066cc;
+  border-radius: 50px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  z-index: 1;
+}
+
+.view-more-btn-outline::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0066cc 0%, #004080 100%);
+  transition: width 0.5s ease, height 0.5s ease;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.view-more-btn-outline:hover {
+  color: #fff;
+  border-color: #0066cc;
+}
+
+.view-more-btn-outline:hover::before {
+  width: 400px;
+  height: 400px;
+}
+
+.view-more-btn-outline i {
+  transition: transform 0.4s ease;
+}
+
+.view-more-btn-outline:hover i {
+  transform: translateX(5px);
+}
+
+/* Alternative Style 3 - Deep Sea Minimal */
+.view-more-btn-minimal {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #003d5c;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.view-more-btn-minimal::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #0066cc 0%, #00a8e8 100%);
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.view-more-btn-minimal:hover {
+  color: #0066cc;
+}
+
+.view-more-btn-minimal:hover::after {
+  width: 100%;
+}
+
+.view-more-btn-minimal i {
+  font-size: 12px;
+  transition: transform 0.3s ease;
+}
+
+.view-more-btn-minimal:hover i {
+  transform: translateX(5px);
+}
+
+/* Alternative Style 4 - Tropical Blue (Bright) */
+.view-more-btn-tropical {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #00a8e8 0%, #0077b6 100%);
+  border-radius: 50px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(0, 168, 232, 0.3);
+  z-index: 1;
+}
+
+.view-more-btn-tropical::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(135deg, #48cae4 0%, #00a8e8 100%);
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+}
+
+.view-more-btn-tropical:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 168, 232, 0.4);
+  color: #fff;
+}
+
+.view-more-btn-tropical:hover::before {
+  width: 100%;
+}
+
+.view-more-btn-tropical i {
+  font-size: 14px;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.view-more-btn-tropical:hover i {
+  transform: translateX(5px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .view-more-btn,
+  .view-more-btn-wave,
+  .view-more-btn-outline,
+  .view-more-btn-tropical {
+    padding: 14px 32px;
+    font-size: 15px;
+  }
+}
+-btn i {
+  font-size: 14px;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.view-more-btn:hover i {
+  transform: translateX(5px);
+}
+
+.view-more-btn span {
+  position: relative;
+  z-index: 2;
+}
+
+/* Alternative Style 1 - Outline Elegant */
+.view-more-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #667eea;
+  background: transparent;
+  border: 2px solid #667eea;
+  border-radius: 50px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  z-index: 1;
+}
+
+.view-more-btn-outline::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: #667eea;
+  transition: width 0.5s ease, height 0.5s ease;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.view-more-btn-outline:hover {
+  color: #fff;
+  border-color: #667eea;
+}
+
+.view-more-btn-outline:hover::before {
+  width: 400px;
+  height: 400px;
+}
+
+.view-more-btn-outline i {
+  transition: transform 0.4s ease;
+}
+
+.view-more-btn-outline:hover i {
+  transform: translateX(5px);
+}
+
+/* Alternative Style 2 - Minimal Modern */
+.view-more-btn-minimal {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.view-more-btn-minimal::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.view-more-btn-minimal:hover {
+  color: #667eea;
+}
+
+.view-more-btn-minimal:hover::after {
+  width: 100%;
+}
+
+.view-more-btn-minimal i {
+  font-size: 12px;
+  transition: transform 0.3s ease;
+}
+
+.view-more-btn-minimal:hover i {
+  transform: translateX(5px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .view-more-btn,
+  .view-more-btn-outline {
+    padding: 14px 32px;
+    font-size: 15px;
+  }
+}
+
+/* Simple Portfolio Hover Style */
+/* Tambahkan ke: public/assets/css/style.css atau src/styles/index.css */
+
+.portfolio-item-simple {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.portfolio-item-simple:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.portfolio-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.portfolio-item-simple:hover .portfolio-image img {
+  transform: scale(1.05);
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 102, 204, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-item-simple:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-overlay i {
+  font-size: 32px;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item-simple:hover .portfolio-overlay i {
+  transform: scale(1.2);
+}
+
+.portfolio-info {
+  padding: 20px 10px;
+  background: #fff;
+  border-radius: 0 0 8px 8px;
+}
+
+.portfolio-info h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.portfolio-item-simple:hover .portfolio-info h4 {
+  color: #0066cc;
+}
+
+.portfolio-info span {
+  font-size: 14px;
+  color: #777;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .portfolio-image img {
+    height: 250px;
+  }
+
+  .portfolio-info h4 {
+    font-size: 16px;
+  }
+
+  .portfolio-info span {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio-image img {
+    height: 220px;
+  }
+}

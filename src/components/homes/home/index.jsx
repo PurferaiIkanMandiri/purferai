@@ -10,6 +10,7 @@ import TestimonialArea from "./testimonial-area";
 import BrandArea from "./brand-area";
 import NewsletterArea from "./newsletter-area";
 import Footer from "@/src/layout/footers/footer-3";
+import Portfolio from "../home/portfolio-area";
 
 const HomeSeven = () => {
   return (
@@ -21,7 +22,7 @@ const HomeSeven = () => {
         <AccessArea />
         <FeatureArea />
         <AccessAreaTwo />
-        <PriceAreaHomeSeven />
+        <Portfolio />
         <TestimonialArea />
         <BrandArea />
         <NewsletterArea />

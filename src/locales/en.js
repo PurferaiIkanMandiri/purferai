@@ -1,5 +1,8 @@
 // src/locales/en.js
 export const en = {
+  gallery_title: "Gallery",
+  more_button: "More",
+
   // Navigation
   nav: {
     home: "Home",

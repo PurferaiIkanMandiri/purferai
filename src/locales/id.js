@@ -1,5 +1,7 @@
 // src/locales/id.js
 export const id = {
+  gallery_title: "Galeri",
+  more_button: "Selengkapnya",
   // Navigation
   nav: {
     home: "Beranda",
