@@ -1,6 +1,5 @@
-import HeaderTwo from "@/src/layout/headers/header-2"; 
+import HeaderTwo from "@/src/layout/headers/header-2";
 import Breadcrumb from "../../common/breadcrumb/breadcrumb";
-import PortfolioArea from "../../portfolios/portfolio/portfolio-area";
 import PortfolioTwoArea from "../../portfolios/portfolio-2/portfolio-2-area";
 import PortfolioSliderFullArea from "../../portfolios/portfolio-slider-full/portfolio-slider-full-area";
 import PortfolioMasonryArea from "../../portfolios/portfolio-masonry/portfolio-masonry-area";
@@ -13,9 +12,7 @@ const Gallery = () => {
     <>
       <HeaderTwo />
       <main>
-        <Breadcrumb top_title="Elements Gallery"  title="Gallery" />
-        <PortfolioArea style_gallery={true} />
-        <hr />
+        <Breadcrumb top_title="Elements Gallery" title="Gallery" />
         <PortfolioTwoArea style_gallery={true} />
         <hr />
         <PortfolioSliderFullArea style_gallery={true} />
@@ -32,4 +29,3 @@ const Gallery = () => {
 };
 
 export default Gallery;
- 
