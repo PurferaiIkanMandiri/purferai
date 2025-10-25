@@ -53,7 +53,9 @@ const PortfolioHomeArea = () => {
                 >
                   <div className="portfolio-image">
                     <Image src={item.img} alt={item.name} />
-                    <div className="portfolio-overlay"></div>
+                    <div className="portfolio-overlay">
+                      <i className="ti-eye"></i>
+                    </div>
                   </div>
                   <div className="portfolio-info">
                     <h4>{item.name}</h4>

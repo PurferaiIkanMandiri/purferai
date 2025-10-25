@@ -2,7 +2,10 @@
 export const en = {
   gallery_title: "Gallery",
   more_button: "More",
-
+  our_photo_title: "Our Photo Gallery",
+  our_photo_subtitle: "Explore our collection of beautiful moments",
+  total_photos: "Total Photos",
+  photos: "Photos",
   // Navigation
   nav: {
     home: "Home",

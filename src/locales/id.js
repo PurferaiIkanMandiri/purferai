@@ -2,6 +2,10 @@
 export const id = {
   gallery_title: "Galeri",
   more_button: "Selengkapnya",
+  our_photo_title: "Galeri Foto Kami",
+  our_photo_subtitle: "Jelajahi koleksi momen indah kami",
+  total_photos: "Total Foto",
+  photos: "Foto",
   // Navigation
   nav: {
     home: "Beranda",

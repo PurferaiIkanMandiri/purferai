@@ -3,32 +3,13 @@ import ImagePopup from "@/src/modals/ImagePopup";
 import Image from "next/image";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "@/src/hooks/useTranslation";
 
-// data
-const categories = [
-  "All",
-  ...new Set(portfolio_data.map((item) => item.category)),
-];
-const OurPhoto = ({ style_gallery }) => {
-  const [activeCategory, setActiveCategory] = useState("All");
-  const [items, setItems] = useState(portfolio_data);
-  // const [catItems, setCatItems]  = useState(categories)
+const OurPhoto = () => {
+  const { t } = useTranslation();
 
-  const filterItems = (cateItem) => {
-    setActiveCategory(cateItem);
-
-    if (cateItem === "All") {
-      return setItems(portfolio_data);
-    } else {
-      const findItems = portfolio_data.filter((findItem) => {
-        return findItem.category == cateItem;
-      });
-      setItems(findItems);
-    }
-  };
-
-  // filter for gallery
-  const filter_items = style_gallery ? items.slice(0, 3) : items.slice(0, 9);
+  // Tampilkan semua gambar tanpa filter
+  const allItems = portfolio_data;
 
   // photoIndex
   const [photoIndex, setPhotoIndex] = useState(0);
@@ -42,62 +23,58 @@ const OurPhoto = ({ style_gallery }) => {
     setIsOpen(true);
   };
 
-  //  images
+  // images untuk lightbox
   const img = portfolio_data.map((item) => item.img.src);
 
   return (
     <>
-      <div
-        className={`portfolio-area ${
-          style_gallery ? "pt-100" : "pt-100 pb-100"
-        }`}
-      >
+      <div className="portfolio-area pt-100 pb-100">
         <div className="container">
-          <div className="row text-center">
+          {/* Title Section */}
+          <div className="row">
             <div className="col-12">
-              <div className="portfolio-menu mb-50">
-                {categories.map((cate, i) => (
-                  <button
-                    onClick={() => filterItems(cate)}
-                    key={i}
-                    className={`${cate === activeCategory ? "active" : ""}`}
-                  >
-                    {cate}
-                  </button>
-                ))}
+              <div className="section-title text-center mb-50">
+                <h2>{t("our_photo_title")}</h2>
+                <p>{t("our_photo_subtitle")}</p>
               </div>
             </div>
           </div>
+
+          {/* Portfolio Grid - Tampilkan Semua */}
           <motion.div layout={true} className="row grid text-center">
-            {filter_items.map((item, i) => (
+            {allItems.map((item, i) => (
               <div
                 key={i}
-                className="col-xl-4 col-lg-4 col-md-6 grid-item cat4 cat2 mb-30"
+                className="col-xl-4 col-lg-4 col-md-6 grid-item mb-30"
               >
-                <div className="xn-portfolio">
-                  <div className="xn-portfolio-thumb">
-                    <Image src={item.img} alt="theme-pure" />
-                  </div>
-                  <div className="xn-portfolio-content">
-                    <div className="portfolio-view">
-                      <a className="popup-image" style={{ cursor: "pointer" }}>
-                        <i
-                          onClick={() => handleImagePopup(i)}
-                          className="ti-plus"
-                        ></i>
-                      </a>
+                <div
+                  className="portfolio-item-simple"
+                  onClick={() => handleImagePopup(i)}
+                >
+                  <div className="portfolio-image">
+                    <Image src={item.img} alt={item.name} />
+                    <div className="portfolio-overlay">
+                      <i className="ti-eye"></i>
                     </div>
-                    <h3>
-                      <a style={{ cursor: "pointer", color: "#fff" }}>
-                        {item.name}
-                      </a>
-                    </h3>
+                  </div>
+                  <div className="portfolio-info">
+                    <h4>{item.name}</h4>
                     <span>{item.title}</span>
                   </div>
                 </div>
               </div>
             ))}
           </motion.div>
+
+          {/* Info Total Photos */}
+          <div className="row">
+            <div className="col-12 text-center mt-30">
+              <p className="total-photos-text">
+                {t("total_photos")}: <strong>{allItems.length}</strong>{" "}
+                {t("photos")}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
