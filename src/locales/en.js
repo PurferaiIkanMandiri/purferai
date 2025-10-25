@@ -1,9 +1,16 @@
 // src/locales/en.js
 export const en = {
+  // Breadcrumb
+  breadcrumb_default_subtitle:
+    "Explore our services and discover what we can do for you",
+
+  // Gallery & Photos
   gallery_title: "Gallery",
   more_button: "More",
   our_photo_title: "Our Photo Gallery",
   our_photo_subtitle: "Explore our collection of beautiful moments",
+  our_photos_breadcrumb: "Our Photos",
+  our_photos_title: "Our Photos",
   total_photos: "Total Photos",
   photos: "Photos",
   // Navigation

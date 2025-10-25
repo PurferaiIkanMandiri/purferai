@@ -1,9 +1,16 @@
 // src/locales/id.js
 export const id = {
+  // Breadcrumb
+  breadcrumb_default_subtitle:
+    "Jelajahi layanan kami dan temukan apa yang bisa kami lakukan untuk Anda",
+
+  // Gallery & Photos
   gallery_title: "Galeri",
   more_button: "Selengkapnya",
   our_photo_title: "Galeri Foto Kami",
   our_photo_subtitle: "Jelajahi koleksi momen indah kami",
+  our_photos_breadcrumb: "Foto Kami",
+  our_photos_title: "Foto Kami",
   total_photos: "Total Foto",
   photos: "Foto",
   // Navigation
