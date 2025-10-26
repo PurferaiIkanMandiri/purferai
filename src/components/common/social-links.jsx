@@ -49,8 +49,8 @@ export default SocialLinks;
 const copy_right_text = {
   copy_right: (
     <>
-      © Copyright <span>©{new Date().getFullYear()}</span> Digimuda Inovasi
-      Indonesia. All Rights Reserved{" "}
+      © Copyright <span>©{new Date().getFullYear()}</span> CV. Purferai Ikan
+      Mandiri. All Rights Reserved{" "}
     </>
   ),
 };
