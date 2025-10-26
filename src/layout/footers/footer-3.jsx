@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-import footer_logo from "@assets/img/logo/logodon.png";
+import footer_logo from "@assets/img/logo/pim_footer.png";
 import { CopyRight } from "@/src/components/common/social-links";
 import SocialLinks from "@/src/components/common/social-links";
 
@@ -80,8 +80,8 @@ const FooterThree = ({ style_footer_el }) => {
                     {/* Flexbox container untuk logo */}
                     <div
                       style={{
-                        height: "80px", // Fixed height - konten di bawah tidak akan bergeser
-                        marginBottom: "10px",
+                        height: "10px", // Fixed height - konten di bawah tidak akan bergeser
+                        marginBottom: "80px",
                         display: "flex",
                         alignItems: "center",
                       }}
@@ -92,7 +92,7 @@ const FooterThree = ({ style_footer_el }) => {
                         width={200}
                         height={200}
                         style={{
-                          width: "300px", // UBAH INI untuk resize logo (coba 120px, 150px, 180px, 200px)
+                          width: "200px", // UBAH INI untuk resize logo (coba 120px, 150px, 180px, 200px)
                           height: "auto",
                           maxWidth: "100%",
                         }}

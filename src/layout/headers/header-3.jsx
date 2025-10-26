@@ -26,7 +26,7 @@ const HeaderThree = ({ style_7 }) => {
                   <div className="logo">
                     <Link href="/">
                       <img
-                        src="/assets/img/logo/logo2.svg"
+                        src="/assets/img/logo/pim_logo.png"
                         alt="digimuda"
                         style={{ maxHeight: "100px", width: "auto" }}
                       />
