@@ -1,5 +1,26 @@
 // src/locales/en.js
 export const en = {
+  vision_mission_title: "Our Vision & Mission",
+  vision_mission_subtitle:
+    "The foundation of our commitment to excellence and sustainability in the salt industry",
+
+  // Vision
+  vision_title: "Vision",
+  vision_content:
+    "To become a national leader and pioneer in the sustainable salt industry that prioritizes high quality, technological innovation, and positive impact on society and the environment.",
+
+  // Mission
+  mission_title: "Mission",
+  mission_point_1:
+    "Produce industrial salt according to national (SNI) and international (ISO, ASTM) quality standards with guaranteed consistency.",
+  mission_point_2:
+    "Adopt and develop environmentally friendly technology in the production process to improve efficiency and reduce ecological impact.",
+  mission_point_3:
+    "Promote local community empowerment through sustainable partnerships and fair natural resource management practices.",
+  mission_point_4:
+    "Become a strategic partner for the chemical, food, pharmaceutical, and energy sectors through reliable and high-quality industrial salt supply.",
+  mission_point_5:
+    "Build transparent and integrity-based corporate governance founded on the values of innovation, operational excellence, and social responsibility.",
   // Breadcrumb
   breadcrumb_default_subtitle:
     "Explore our services and discover what we can do for you",

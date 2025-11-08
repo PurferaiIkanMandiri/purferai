@@ -1,5 +1,27 @@
 // src/locales/id.js
 export const id = {
+  // Vision Mission Section
+  vision_mission_title: "Visi & Misi Kami",
+  vision_mission_subtitle:
+    "Fondasi komitmen kami untuk keunggulan dan keberlanjutan dalam industri garam",
+
+  // Vision
+  vision_title: "Visi",
+  vision_content:
+    "Menjadi pemimpin nasional dan pelopor dalam industri garam berkelanjutan yang mengutamakan kualitas tinggi, inovasi teknologi, dan dampak positif bagi masyarakat serta lingkungan.",
+
+  // Mission
+  mission_title: "Misi",
+  mission_point_1:
+    "Memproduksi garam industri sesuai standar mutu nasional (SNI) dan internasional (ISO, ASTM) dengan konsistensi kualitas yang terjamin.",
+  mission_point_2:
+    "Mengadopsi dan mengembangkan teknologi ramah lingkungan dalam proses produksi untuk meningkatkan efisiensi dan mengurangi dampak ekologis.",
+  mission_point_3:
+    "Mendorong pemberdayaan komunitas lokal melalui kemitraan berkelanjutan dan praktik pengelolaan sumber daya alam yang adil.",
+  mission_point_4:
+    "Menjadi mitra strategis bagi sektor industri kimia, makanan, farmasi, dan energi melalui pasokan garam industri yang andal dan berkualitas tinggi.",
+  mission_point_5:
+    "Membangun tata kelola perusahaan yang transparan, berintegritas, dan berbasis pada nilai-nilai inovasi, keunggulan operasional, dan tanggung jawab sosial.",
   // Breadcrumb
   breadcrumb_default_subtitle:
     "Jelajahi layanan kami dan temukan apa yang bisa kami lakukan untuk Anda",

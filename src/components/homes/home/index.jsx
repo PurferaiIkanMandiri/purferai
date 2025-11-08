@@ -5,7 +5,6 @@ import ServiceArea from "./service-area";
 import AccessArea from "./access-area";
 import FeatureArea from "./feature-area";
 import AccessAreaTwo from "./access-area-2";
-import PriceAreaHomeSeven from "./price-area-home-7";
 import TestimonialArea from "./testimonial-area";
 import BrandArea from "./brand-area";
 import NewsletterArea from "./newsletter-area";
